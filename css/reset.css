@@ -1,3 +1,5 @@
+@import "./font.css";
+
 :root {
   --colorBlancoGris: #e5e5e5;
   --colorNegro: #222222;
@@ -19,6 +21,10 @@ body {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   font-family: "Helvetica";
@@ -35,7 +41,15 @@ h6 {
 }
 
 h1,
-h2,
-span {
+h2 {
   font-family: "Helvetica";
+}
+
+p,
+span {
+  font-family: Arial;
+}
+
+img {
+  display: block;
 }
