@@ -111,6 +111,7 @@
   color: var(--colorBlanco);
   font-size: 2.8em;
   margin-bottom: 18px;
+  font-weight: lighter;
 }
 .banner-description {
   width: 50%;
@@ -118,6 +119,7 @@
   text-align: center;
   color: var(--colorBlanco);
   font-size: 1.2em;
+  font-weight: lighter;
 }
 /*Buscardor de articulos*/
 .search-article {
@@ -313,3 +315,112 @@
   margin-left: 1.4em;
 }
 /*FOOTEER*/
+.footer-blog {
+  width: auto;
+  height: auto;
+  background: var(--colorAzul2);
+  margin-right: 5.8em;
+  border-top-right-radius: 200px;
+}
+.description-footer-blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description-footer {
+  width: 40%;
+  padding: 3em 0;
+}
+.description-title {
+  color: var(--colorBlanco);
+  font-size: 1.8em;
+  margin-bottom: 2em;
+}
+.description-paragraph {
+  color: var(--colorBlanco);
+  font-size: 1em;
+}
+.container-btn {
+  width: 20%;
+}
+.btn {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: 0.25s ease;
+}
+.btn.primary {
+  background: var(--colorCelesteOscuro);
+  color: var(--colorBlanco);
+}
+.btn.primary:hover {
+  background: var(--colorCelesteClaro);
+  color: var(--colorNegro);
+}
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 40px;
+  margin-top: 2em;
+  position: relative;
+}
+.footer-contact {
+  width: 100%;
+  height: auto;
+}
+.header-of-footer {
+  display: flex;
+  margin-bottom: 2em;
+}
+.header-of-footer .circle.uno {
+  background: var(--colorCelesteClaro);
+}
+.header-of-footer .logo {
+  display: inline-flex;
+  margin-right: 1.5em;
+}
+.contact-info {
+  height: auto;
+}
+.footer-title-compay,
+.footer-about-us,
+.footer-follow-us {
+  color: var(--colorBlanco);
+}
+.footer-title-compay {
+  font-size: 1.8em;
+  font-family: "Gilroy-Bold";
+}
+.footer-about-us,
+.footer-follow-us {
+  font-size: 1.3em;
+}
+.contact {
+  margin-bottom: 1.5em;
+  color: var(--colorBlanco);
+  display: inline-flex;
+}
+.contact span {
+  margin-right: 20px;
+}
+.contact-info a {
+  display: block;
+  margin-bottom: 1em;
+  color: var(--colorBlanco);
+}
+.copy {
+  width: 100%;
+  height: 60px;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.copy-text {
+  color: var(--colorBlanco);
+  opacity: 0.4;
+}
