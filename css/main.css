@@ -1,0 +1,83 @@
+.contenedor {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+/*Logo*/
+.logo {
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+}
+.circle.uno {
+  background: var(--colorAzul2);
+  border: 2px solid var(--colorAzul2);
+}
+.circle.dos {
+  background: var(--colorBlanco);
+  border: 2px solid var(--colorAzul2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Gilroy-Bold;
+  position: absolute;
+  left: 15px;
+}
+/*Header contenedor*/
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--colorBlanco);
+}
+.header .contenedor {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  align-items: inherit;
+}
+.menu ul li {
+  width: 130px;
+  height: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: space-between;
+}
+.menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: center;
+  color: var(--colorAzul1);
+  font-size: 1.2em;
+  font-family: Gilroy-Bold;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+.menu ul li a.active {
+  color: var(--colorAzul1Hover);
+}
+.menu ul li a:hover {
+  color: var(--colorAzul1Hover);
+}

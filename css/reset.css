@@ -1,6 +1,7 @@
 @import "./font.css";
 
 :root {
+  --colorBlanco: #ffffff;
   --colorBlancoGris: #e5e5e5;
   --colorNegro: #222222;
   --colorAzul1: #1f3f68;
@@ -8,15 +9,13 @@
   --colorAzul3: #356ead;
   --colorCelesteOscuro: #5a98d0;
   --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
