@@ -447,6 +447,7 @@
   .header .contenedor {
     width: 95%;
   }
+
   .main-article {
     /* grid-template-columns: 1fr minmax(250px, 300px); */
     grid-template-columns: 1fr 1fr;
@@ -465,6 +466,9 @@
   }
   .footer-blog {
     margin-right: 1.3em;
+  }
+  .container-btn {
+    width: 40%;
   }
   .footer-blog .contenedor {
     width: 80%;
