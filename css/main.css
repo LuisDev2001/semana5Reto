@@ -266,3 +266,50 @@
   color: var(--colorAzul2);
   font-weight: bold;
 }
+.all-article {
+  width: 100%;
+  height: auto;
+}
+.title-all-article {
+  margin: 2.5em 0 1.9em 0;
+  color: var(--colorAzul3);
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.all-article-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 32px;
+}
+.items {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 20px;
+}
+.article-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.all-article-pages {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-page {
+  border: 0;
+  background: none;
+  color: var(--colorAzul3);
+  cursor: pointer;
+  font-size: 1em;
+}
+.btn-page .fas.fa-arrow-left {
+  margin-right: 1.4em;
+}
+.btn-page .fas.fa-arrow-right {
+  margin-left: 1.4em;
+}
+/*FOOTEER*/
