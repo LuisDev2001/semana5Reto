@@ -189,6 +189,13 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin-bottom: 2.5em;
+  grid-template-areas: "infoPost imagen";
+}
+.main-article .image-article {
+  grid-area: imagen;
+}
+.main-article .article-info {
+  grid-area: infoPost;
 }
 .image-article img {
   width: 100%;
@@ -246,8 +253,9 @@
 }
 .article-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   justify-content: space-between;
+  grid-gap: 20px;
 }
 .article {
   width: 100%;
@@ -341,6 +349,7 @@
   color: var(--colorBlanco);
   font-size: 1.8em;
   margin-bottom: 2em;
+  font-weight: lighter;
 }
 .description-paragraph {
   color: var(--colorBlanco);
@@ -441,9 +450,6 @@
   .main-article {
     grid-template-columns: 1fr minmax(300px, 450px);
   }
-  .image-article img {
-    width: 100%;
-  }
   .article-title {
     font-size: 1.7em;
   }
@@ -452,6 +458,9 @@
   }
   .all-article-pages {
     margin-bottom: 6em;
+  }
+  .items {
+    grid-template-columns: minmax(250px, 300px) 1fr;
   }
   .footer-blog {
     margin-right: 1.3em;
@@ -462,5 +471,56 @@
   .footer-items {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    width: 90%;
+  }
+  .menu ul li {
+    width: 80px;
+  }
+  .menu ul li a {
+    font-size: 14px;
+  }
+  .main-article {
+    grid-template-columns: 1fr;
+  }
+  .banner-title {
+    font-size: 1.5em;
+  }
+  .banner-description {
+    width: 85%;
+    font-size: 13px;
+  }
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+  .items {
+    grid-template-columns: 1fr;
+  }
+  .main-article {
+    grid-template-areas:
+      "imagen"
+      "infoPost";
+  }
+  .footer-items {
+    grid-template-columns: 1fr;
+  }
+  .footer-blog {
+    margin-right: 0.5em;
+  }
+  .description-footer-blog {
+    flex-direction: column;
+  }
+  .description-footer {
+    width: 100%;
+  }
+  .footer-blog .contenedor {
+    width: 90%;
+  }
+  .container-btn {
+    width: 100%;
   }
 }
